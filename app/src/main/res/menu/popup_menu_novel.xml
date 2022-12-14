@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/pin_novel"
+        android:title="Создать метку/Удалить метку"/>
+    <item android:id="@+id/delete_novel"
+        android:title="Удалить роман"/>
+
+</menu>

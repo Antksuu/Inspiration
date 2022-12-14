@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Active.Task.MainActivity"
+    android:background="@color/color_white_2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/title_glavnoe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:background="@color/teal_701">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/teal_200"
+            >
+          <TextView
+              android:layout_width="240dp"
+              android:layout_height="90dp"
+              android:text="Приветсвую тебя в приложении Вдохновение"
+              android:fontFamily="@font/torhok"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:textStyle="italic"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_baseline_hive_24"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:text="Список задач"
+            android:fontFamily="@font/pacifico_regular"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_home_task"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_glavnoe"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_baseline_playlist_add_24"
+        android:layout_margin="26dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="26dp"
+        app:srcCompat="@drawable/ic_baseline_dashboard_24" />
+
+</RelativeLayout>
